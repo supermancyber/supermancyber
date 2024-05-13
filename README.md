@@ -18,3 +18,6 @@ Setelah proses pengunduhan selesai, buka browser web Anda dan ketikkan URL `loca
 4. **Import Database:**
 
 Buka browser web Anda dan navigasikan ke `localhost/phpmyadmin`. Masuk ke phpMyAdmin menggunakan kredensial default (biasanya "root" tanpa kata sandi). Setelah itu, buka database tersebut dan pilih opsi "Import". Pilih file `db.sql` untuk di-import di phpMyAdmin. Setelah import selesai, skema database akan siap digunakan oleh aplikasi.
+
+## NOTE
+JANGAN MENGHOSTING APLIKASI WEB INI DI INTERNET! APLIKASI INI SENGAJA RENTAN DAN DAPAT MENIMBULKAN BAHAYA JIKA DIEKSPLOITASI OLEH PIHAK YANG TIDAK BERTANGGUNG JAWAB!
