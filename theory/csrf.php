@@ -64,7 +64,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">Untuk melindungi aplikasi web dari serangan CSRF, penting untuk menerapkan mekanisme validasi dan token keamanan yang unik untuk setiap permintaan yang diajukan oleh pengguna.</p>
             
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../csrf-edit-profile.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Buat 2 akun (attacker dan victim).</p>

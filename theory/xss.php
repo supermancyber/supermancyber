@@ -63,7 +63,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">Dampak dari serangan XSS bisa sangat berbahaya, termasuk pencurian kredensial pengguna, peretasan sesi pengguna, pengalihan pengguna ke situs phishing, manipulasi atau penghapusan data, dan bahkan pengendalian penuh atas akun pengguna.</p>
             <p class="paragraph">Untuk melindungi aplikasi web dari serangan XSS, penting untuk memvalidasi dan menyaring setiap input yang diterima dari pengguna, serta melakukan escapting atau encoding pada data yang disertakan dalam halaman web untuk memastikan bahwa skrip berbahaya tidak dapat dieksekusi. Selain itu, menggunakan kebijakan keamanan seperti Content Security Policy (CSP) juga bisa membantu mencegah serangan XSS dengan membatasi sumber daya yang diizinkan untuk dimuat pada halaman web.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../reflected-xss.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Buat 2 akun (attacker dan victim).</p>

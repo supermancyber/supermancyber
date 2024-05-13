@@ -63,7 +63,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">Untuk melindungi aplikasi web dari kerentanan IDOR, penting untuk menerapkan kontrol akses yang kuat dan memastikan bahwa akses ke objek atau data hanya diberikan kepada pengguna yang memiliki hak akses yang sesuai. Ini dapat dilakukan dengan melakukan validasi pada setiap permintaan yang diajukan oleh pengguna, serta mengenkripsi atau menyamarkan identifikasi objek yang sensitif untuk mencegah manipulasi URL secara langsung.</p>
 
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../idor-edit-profile.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Buatlah 2 akun (attacker dan victim).</p>

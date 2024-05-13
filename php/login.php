@@ -13,11 +13,11 @@ if(isset($_POST['uname']) &&
     
     if(empty($uname)){
     	$em = "User name is required";
-    	header("Location: ../login.php?error=$em&$data");
+    	header("Location: ../index.php?error=$em&$data");
 	    exit;
     }else if(empty($pass)){
     	$em = "Password is required";
-    	header("Location: ../login.php?error=$em&$data");
+    	header("Location: ../index.php?error=$em&$data");
 	    exit;
     }else {
 
@@ -41,19 +41,19 @@ if(isset($_POST['uname']) &&
                  exit;
              }else {
                $em = "Incorect User name or password";
-               header("Location: ../login.php?error=$em&$data");
+               header("Location: ../index.php?error=$em&$data");
                exit;
             }
 
           }else {
             $em = "Incorect User name or password";
-            header("Location: ../login.php?error=$em&$data");
+            header("Location: ../index.php?error=$em&$data");
             exit;
          }
 
       }else {
          $em = "Incorect User name or password";
-         header("Location: ../login.php?error=$em&$data");
+         header("Location: ../index.php?error=$em&$data");
          exit;
       }
     }

@@ -64,7 +64,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">4. Reputasi: Kerentanan terhadap Business Logic Error dapat merusak reputasi perusahaan dengan menghasilkan pengalaman pengguna yang buruk atau menimbulkan kebocoran data yang merugikan.</p>
             <p class="paragraph">Untuk mencegah Business Logic Error, penting untuk melakukan pengujian yang menyeluruh pada semua skenario logika bisnis yang mungkin, baik yang diinginkan maupun yang tidak diinginkan. Selain itu, pengembang perlu memperhatikan keamanan secara menyeluruh dalam merancang dan mengimplementasikan logika bisnis aplikasi, termasuk validasi input, otorisasi yang ketat, dan penggunaan prinsip-prinsip keamanan yang baik dalam pengembangan perangkat lunak. Selalu memperbarui dan memantau aplikasi untuk mendeteksi dan memperbaiki kerentanan juga merupakan praktik yang sangat penting.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../business-logic-error.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Klik "Business Logic Error" pada labs.</p>
@@ -92,6 +93,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                     <img src="../photos/business-logic-error-5.png" width=750px>
                 </div>
                 <p class="paragraph">Kerentanan seperti ini dapat menyebabkan kerugian finansial sehingga harus diperhatikan dengan baik.</p>
+                <p class="paragraph">Berikut ini merupakan video POC untuk kerentanan business logic error:</p>
+                <div class="box d-flex flex-column">
+                    <video width="900px" controls>
+                        <source src="../videos/business-logic-error.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
             <br><br><a href="../theory.php" class="btn btn-secondary">Back</a>
         </div>

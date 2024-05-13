@@ -61,7 +61,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">Dampak dari serangan Command Execution bisa sangat berbahaya, termasuk pengambilalihan kontrol atas server, akses ke data sensitif, dan bahkan penghapusan atau modifikasi konfigurasi sistem.</p>
             <p class="paragraph">Pada laboratorium yang disediakan, kerentanan Command Execution sengaja dibuat agar pengguna dapat memahami cara kerja serangan ini dan belajar cara melindungi aplikasi web dari serangan semacam itu. Ini menunjukkan pentingnya untuk selalu melakukan validasi dan penyaringan input, serta mengimplementasikan prinsip keamanan terbaik dalam pengembangan aplikasi web.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../command-exec.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban: </p>
                 <p class="paragraph">1. Klik "Command Execution" pada labs.</p>

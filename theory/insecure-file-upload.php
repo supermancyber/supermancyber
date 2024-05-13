@@ -62,7 +62,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             </div>
             <p class="paragraph">Untuk mencegah serangan Insecure File Upload, penting untuk melakukan validasi dan filtrasi yang ketat terhadap tipe file yang diizinkan untuk diunggah, membatasi ukuran file, serta menyimpan file di lokasi yang aman yang tidak dapat dieksekusi secara langsung oleh server. Selain itu, mengimplementasikan mekanisme deteksi dan pemindaian malware juga dapat membantu dalam melindungi aplikasi dari serangan Insecure File Upload.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../insecure-file-upload.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Klik "Insecure File Upload" pada labs.</p>

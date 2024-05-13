@@ -62,7 +62,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">2. Penyusupan ke Jaringan Internal: Penyerang dapat menggunakan SSRF untuk mengeksploitasi server dan menyerang sumber daya internal jaringan, seperti server database atau sistem manajemen jaringan.</p>
             <p class="paragraph">Untuk mencegah SSRF, penting untuk melakukan validasi dan sanitasi input pengguna dengan cermat, membatasi akses server ke sumber daya internal yang diperlukan, serta memperbarui dan memantau konfigurasi server secara teratur untuk mengidentifikasi dan memperbaiki potensi kerentanan. Selain itu, menggunakan daftar putih alamat URL yang diizinkan dan memperbarui perangkat lunak dengan patch keamanan terbaru juga dapat membantu melindungi aplikasi dari serangan SSRF.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../ssrf.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Klik "Server Side Request Forgery" pada labs.</p>

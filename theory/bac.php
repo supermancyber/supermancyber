@@ -65,7 +65,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">3. Manipulasi Data: Penyerang dapat menggunakan kerentanan dalam kontrol akses untuk memanipulasi data di dalam aplikasi. Ini dapat berarti mengubah atau menghapus data yang ada, atau bahkan menyisipkan data palsu atau berbahaya.</p>
             <p class="paragraph">Oleh karena itu, melakukan pengujian keamanan untuk mendeteksi kerentanan dalam kontrol akses, seperti Broken Access Control, sangat penting bagi organisasi yang mengelola aplikasi web semacam itu. Dengan melakukan pengujian tersebut, mereka dapat mengidentifikasi dan memperbaiki celah keamanan sebelum penyerang dapat mengeksploitasi mereka untuk tujuan yang merugikan.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../groups.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Buat 2 akun (attacker dan victim).</p>

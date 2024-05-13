@@ -63,7 +63,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <p class="paragraph">Dampak dari serangan LFI dapat sangat serius, termasuk pengambilalihan kontrol atas server, pencurian data sensitif, dan bahkan eskalasi hak akses ke server yang terinfeksi.</p>
             <p class="paragraph">Pada laboratorium yang disediakan, kerentanan LFI disediakan untuk memungkinkan pengguna memahami cara serangan ini dilakukan dan bagaimana untuk melindungi aplikasi web dari kerentanan semacam itu. Ini menunjukkan pentingnya untuk selalu melakukan validasi input dan membatasi akses file lokal agar tidak terjadi serangan LFI pada aplikasi web.</p>
             <!-- Tombol "see more" expand untuk menampilkan kunci jawaban -->
-            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban Lab</button>
+            <button class="btn btn-primary mt-3" onclick="toggleAnswer()">Kunci Jawaban</button>
+            <a href="../local-file-inclusion.php" class="btn btn-primary mt-3 ms-2">Latihan</a>
             <div id="answer" class="hide mt-3">
                 <p class="paragraph">Kunci Jawaban:</p>
                 <p class="paragraph">1. Klik "Local File Inclusion" pada labs.</p>
