@@ -75,7 +75,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
     <body>
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="shadow w-450 p-3 text-center">
-                <h3 class="display-4">Add User to <?php echo ($group['group_name']); ?></h3><br>
+                <h3 style="font-size: 40px;" class="display-4">Add User to <?php echo ($group['group_name']); ?></h3><br>
                 <!-- Form untuk menambahkan pengguna ke grup -->
                 <form action="php/add-user-to-group.php" method="post">
                     <input type="hidden" name="group_id" value="<?php echo $groupId; ?>">
@@ -85,7 +85,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                     </div>
                     <br><button type="submit" class="btn btn-primary">Add User to Group</button><br><br>
                 </form>
-                <a href="groups.php" class="btn btn-secondary">Back</a>
+                <a href="group-details.php?group_id=<?php echo $groupId; ?>" class="btn btn-secondary">Back</a>
             </div>
         </div>
     </body>

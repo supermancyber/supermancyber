@@ -48,7 +48,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="shadow p-3 text-center">
             <h3 class="display-4">Groups</h3>
-            <a href="create-group.php" class="btn btn-primary btn-block mb-3">Create</a>
+            <br>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -62,8 +62,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
         <td><?= $group['group_name'] ?></td>
         <td class="action-buttons">
             <!-- Tombol untuk aksi lainnya -->
-            <a class="btn btn-success" href="group-details.php?group_id=<?php echo $group['group_id']; ?>">Read</a>
-            <a class="btn btn-primary" href="group-chat.php?group_id=<?php echo $group['group_id']; ?>">Chat</a>
+            <a class="btn btn-success" href="group-chat.php?group_id=<?php echo $group['group_id']; ?>">Chat</a>
+            <a class="btn btn-primary" href="group-details.php?group_id=<?php echo $group['group_id']; ?>">Details</a>
             <?php
             // Periksa apakah pengguna adalah anggota dan admin dari grup yang sedang ditampilkan
             $groupId = $group['group_id'];
@@ -88,7 +88,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 
                 </tbody>
             </table>
-            <a href="labs.php" class="btn btn-secondary">Back</a>
+            <br>
+            <div class="d-flex justify-content-center">
+                <a href="create-group.php" class="btn btn-primary btn-block mb-3">Create Group</a>
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="labs.php" class="btn btn-secondary btn-block mb-3">Back</a>
+            </div>
         </div>
     </div>
 </body>

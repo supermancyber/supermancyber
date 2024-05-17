@@ -35,33 +35,35 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="shadow w-450 p-3 text-center">
-            <h3 class="display-4">Insecure File Upload</h3>
-            <br>
+            <h3 style="font-size: 45px;" class="display-4">Insecure File Upload</h3>
+            <br><br>
             <form method="post" enctype="multipart/form-data" action="">
                 <div class="mb-3">
                     <label for="uploaded_file" class="form-label">Select File:</label>
                     <input type="file" name="uploaded_file" id="uploaded_file" required>
-                </div>
+                </div><br>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    // Tentukan folder untuk menyimpan file
+                    $uploadDirectory = 'files/';
+
+                    // Dapatkan informasi file yang diunggah
+                    $fileName = $_FILES['uploaded_file']['name'];
+                    $fileTmpName = $_FILES['uploaded_file']['tmp_name'];
+
+                    // Pindahkan file ke folder yang ditentukan
+                    if (move_uploaded_file($fileTmpName, $uploadDirectory . $fileName)) {
+                        echo "<p>File anda berhasil diunggah di /$uploadDirectory$fileName</p>";
+                    } else {
+                        echo "<p>Maaf, terjadi kesalahan saat mengunggah file.</p>";
+                    }
+                }
+                ?>
+                <br>
                 <button type="submit" class="btn btn-primary">Upload</button>
             </form>
             <br>
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                // Tentukan folder untuk menyimpan file
-                $uploadDirectory = 'files/';
-
-                // Dapatkan informasi file yang diunggah
-                $fileName = $_FILES['uploaded_file']['name'];
-                $fileTmpName = $_FILES['uploaded_file']['tmp_name'];
-
-                // Pindahkan file ke folder yang ditentukan
-                if (move_uploaded_file($fileTmpName, $uploadDirectory . $fileName)) {
-                    echo "<p>File anda berhasil diunggah di /$uploadDirectory$fileName</p>";
-                } else {
-                    echo "<p>Maaf, terjadi kesalahan saat mengunggah file.</p>";
-                }
-            }
-            ?>
+            
             <a href="labs.php" class="btn btn-secondary">Back</a>
         </div>
     </div>

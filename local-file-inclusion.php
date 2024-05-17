@@ -41,7 +41,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="shadow w-450 p-3 text-center" style="max-width: 1000px">
-            <h3 class="display-4">Local File Inclusion</h3>
+            <h3 style="font-size: 40px;" class="display-4">Local File Inclusion</h3>
             <br>
             <form method="get" action="">
                 <label for="file_path">File Path:</label>

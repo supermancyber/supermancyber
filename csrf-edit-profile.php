@@ -39,7 +39,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
     <body>
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="shadow w-450 p-3 text-center">
-                <h3 class="display-4">CSRF - Edit Profile</h3><br>
+                <h3 style="font-size: 40px;" class="display-4">CSRF - Edit Profile</h3><br>
                 <!-- Tampilkan formulir dengan data pengguna -->
                 <form action="php/csrf-update-profile.php" method="post">
                     <!-- Input tersembunyi untuk menyimpan ID pengguna -->

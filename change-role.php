@@ -69,8 +69,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
     <body>
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="shadow w-450 p-3 text-center">
-                <h3 class="display-4">Change User Role</h3>
-                <p>Changing role for: <?php echo $userData['fname']; ?></p>
+                <h3 style="font-size: 40px;" class="display-4">Change User Role</h3>
+                <br><p>Changing role for: <?php echo $userData['fname']; ?></p><br>
                 <form action="php/update-role.php" method="post">
                     <input type="hidden" name="user_id" value="<?php echo $userId; ?>">
                     <input type="hidden" name="group_id" value="<?php echo $groupId; ?>">
@@ -97,9 +97,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                             ?>
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary">Change Role</button>
+                    <br><button type="submit" class="btn btn-primary">Change Role</button>
                 </form>
-                <a href="group-details.php?group_id=<?php echo $groupId; ?>" class="btn btn-secondary">Back</a>
+                <br><a href="group-details.php?group_id=<?php echo $groupId; ?>" class="btn btn-secondary">Back</a>
             </div>
         </div>
     </body>

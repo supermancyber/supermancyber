@@ -43,7 +43,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="shadow p-3 text-center">
-            <h3 class="display-4">SSRF Example</h3>
+            <h3 style="font-size: 45px;" class="display-4">SSRF</h3>
             <br>
             <form method="post" action="">
                 <div class="mb-3">
@@ -52,7 +52,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                 </div>
                 <button type="submit" class="btn btn-primary">Fetch Content</button>
             </form>
-            <br>
+            <br><br>
             <div id="content">
                 <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {

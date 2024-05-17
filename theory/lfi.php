@@ -74,6 +74,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                 <div class="box d-flex flex-column">
                     <img src="../photos/lfi-1.png" width=750px>
                 </div>
+                <p class="paragraph">Untuk pengguna windows, tidak terdapat file "/etc/passwd". Untuk file sensitif pada windows terdapat beberapa contoh, misalnya:</p>
+                <ul>
+                    <li><p class="paragraph">C:\users\user\AppData\</p></li>
+                    <li><p class="paragraph">C:\Windows\System32\</p></li>
+                </ul>
                 <p class="paragraph">Kerentanan LFI ini tidak terlalu umum, namun perlu diperhatikan bagi para developer yang membuat aplikasi web.</p>
                 <p class="paragraph">Berikut ini merupakan video POC untuk kerentanan LFI:</p>
                 <div class="box d-flex flex-column">

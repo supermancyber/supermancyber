@@ -38,7 +38,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
     <body>
         <div class="d-flex justify-content-center align-items-center vh-100">
             <div class="shadow w-450 p-3 text-center">
-                <h3 class="display-4">Create Group</h3><br>
+                <h3 style="font-size: 40px;" class="display-4">Create Group</h3><br>
                 <!-- Tampilkan formulir dengan data pengguna -->
                 <form action="php/add-group.php" method="post">
                     <label for="gname">Group Name:</label>
