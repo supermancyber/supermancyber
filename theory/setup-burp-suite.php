@@ -105,7 +105,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                 <div class="d-flex flex-column">
                     <img src="../photos/multi-account-container.png" width=300px>
                 </div>
-                <br><br><a href="../theory.php" class="btn btn-secondary">Back</a>
+                <br><br><a href="../labs.php" class="btn btn-secondary">Back</a>
             </div>
         </div>
     </body>

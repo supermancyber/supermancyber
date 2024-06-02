@@ -94,7 +94,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
                     </video>
                 </div>
             </div>
-            <br><br><a href="../theory.php" class="btn btn-secondary">Back</a>
+            <br><br><a href="../labs.php" class="btn btn-secondary">Back</a>
         </div>
     </div>
 

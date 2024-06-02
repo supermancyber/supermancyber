@@ -58,12 +58,11 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
             <h4 class="display-4">Help</h4><br><br>
             <p class="paragraph">Selamat datang di aplikasi web supermancyber!</p>
             <p class="paragraph">Aplikasi ini merupakan platform yang dapat digunakan untuk belajar penetration testing.</p>
-            <p class="paragraph">Kalian bisa mulai dengan memahami konsep dasar <a href="theory.php">disini</a>. Mulai dari setup tools hingga teori-teori kerentanan aplikasi web.</p>
-            <p class="paragraph">Untuk belajar praktek, kalian bisa klik <a href="home.php">disini</a> untuk mengerjakan lab yang sudah disediakan di aplikasi ini.</p>
+            <p class="paragraph">Kalian bisa mulai dengan memahami konsep dasar. Mulai dari setup tools hingga teori-teori kerentanan aplikasi web.</p>
+            <p class="paragraph">Untuk belajar praktek, kalian bisa klik tombol <b>latihan</b> untuk mengerjakan lab yang sudah disediakan di aplikasi ini.</p>
             <p class="paragraph">Selamat belajar!</p><br>
             <div class="d-flex flex-column align-items-center"> <!-- Mengelompokkan tombol-tombol 'Back' -->
-                <a href="labs.php" class="btn btn-secondary btn-block mb-3">Back to Labs</a>
-                <a href="theory.php" class="btn btn-secondary">Back to Theory</a>
+                <a href="labs.php" class="btn btn-secondary btn-block mb-3">Back</a>
             </div>
         </div>
     </div>
